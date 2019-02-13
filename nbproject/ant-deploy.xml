@@ -61,8 +61,8 @@ Contributor(s):
         <echo message="Deploying ${deploy.ant.archive} to ${Context(path)}"/>
         <taskdef name="deploy" classname="org.apache.catalina.ant.DeployTask"
                  classpath="${tomcat.home}/server/lib/catalina-ant.jar"/>
-        <deploy url="${tomcat.url}/manager" username="${tomcat.username}"
-                password="${tomcat.password}" path="${Context(path)}"
+        <deploy url="${tomcat.url}/manager" username=""
+                password="" path="${Context(path)}"
                 war="${deploy.ant.archive}"/>
         <property name="deploy.ant.client.url" value="${tomcat.url}${Context(path)}"/>
     </target>
